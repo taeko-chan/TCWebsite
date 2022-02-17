@@ -1,33 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <link rel="stylesheet" href="/main.css">
-    <meta charset="utf-8">
-    <title>Traffic Engineering</title>
-  </head>
-  <body>
-    <div class="mcontainer">
-      <img src="/assets/taeko.png" alt="Taeko" class="logo">
-      <div class="txtcont">
-        <h1>Roadway & Traffic Engineering</h1>
-        <div class="menubar">
-          <a href="/">home</a>
-          <a href="/tc">taeko & co</a>
-          <a href="/pr">programming</a>
-          <a href="/p">personal</a>
-          <a href="/t">traffic stuff</a>
-        </div>
-        <br><hr><br>
-        <h2>WIP</h2>
-      </div>
-      <br><hr><br>
-      <div class="footer">
-          <img src="/assets/atbhn.png" alt="Autobahn" class="atbhn">
-          <p>Programmed by Felix Remi Cordone (Taeko)</p>
-          <p>Last update 16. February 2022</p>
-          <p>A huge thanks to <a href="https://skysucht.com">cubisima</a> for hosting!</p>
-      </div>
-    </div>
-    <br><br><br>
-  </body>
+<head>
+  <link rel="stylesheet" href="/main.css">
+  <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <meta charset="utf-8">
+  <title>Traffic Stuff - Taeko & Co</title>
+  <script>
+    $(function () {
+      $('#header').load('/assets/header.html');
+      $('#footer').load('/assets/footer.html');
+    });
+  </script>
+</head>
+<body>
+<div class="mcontainer" id="s1">
+  <div class="txtcont" id="header"></div> <!-- Loaded with JQuery -->
+  <div class="txtcont">
+    <!-- Content -->
+  </div>
+  <div class="txtcont" id="footer"></div> <!-- Loaded with JQuery -->
+  <br><br><br>
+</div>
+</body>
 </html>

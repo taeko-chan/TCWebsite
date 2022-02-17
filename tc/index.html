@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+<head>
     <link rel="stylesheet" href="/main.css">
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <meta charset="utf-8">
-    <title>Taeko & Co</title>
-  </head>
-  <body>
-    <div class="mcontainer">
-      <img src="/assets/taeko.png" alt="Taeko" class="logo">
-      <div class="txtcont">
-        <h1>Taeko & Co Minecraft Server</h1>
-        <div class="menubar">
-          <a href="/">home</a>
-          <a href="/tc">taeko & co</a>
-          <a href="/pr">programming</a>
-          <a href="/p">personal</a>
-          <a href="/t">traffic stuff</a>
-        </div>
-        <br><hr><br>
+    <title>The Taeko & Co Minecraft Server</title>
+    <script>
+        $(function () {
+            $('#header').load('/assets/header.html');
+            $('#footer').load('/assets/footer.html');
+        });
+    </script>
+</head>
+<body>
+<div class="mcontainer" id="s1">
+    <div class="txtcont" id="header"></div> <!-- Loaded with JQuery -->
+    <div class="txtcont">
         <h2>A Minecraft Server Like No Other...</h2>
         <p>Taeko & Co is a unique server. It's like a seperate world with infrastructure and cities and countries.</p>
-        <p>It is the result of nearly two years of work (and counting!) by many people together. T&C is currently made</p>
+        <p>It is the result of nearly two years of work (and counting!) by many people together. T&C is currently
+            made</p>
         <p>up of 3 countries, Atteca, Lyria & Swarovski, each with cities, countryside and extensive history. </p>
-        <p>As each country is run by seperate people, the focuses of each are different. I personally own Atteca, which</p>
+        <p>As each country is run by seperate people, the focuses of each are different. I personally own Atteca,
+            which</p>
         <p>has towns & cities scattered around the country, connected by an extensive & realistic road network, with</p>
         <p>the current large project being a new city called Wengen. Atteca's capital city, Atami, has been around</p>
         <p>almost as long as the server has, and is ever growing.</p><br>
@@ -31,15 +31,9 @@
         <a href="#">Drawn Maps (not often updated)</a><br><br>
         <p>For T&C players...</p>
         <a href="/pr/tcmods">Custom Mods</a>
-      </div>
-      <br><hr><br>
-      <div class="footer">
-          <img src="/assets/atbhn.png" alt="Autobahn" class="atbhn">
-          <p>Programmed by Felix Remi Cordone (Taeko)</p>
-          <p>Last update 16. February 2022</p>
-          <p>A huge thanks to <a href="https://skysucht.com">cubisima</a> for hosting!</p>
-      </div>
     </div>
+    <div class="txtcont" id="footer"></div> <!-- Loaded with JQuery -->
     <br><br><br>
-  </body>
+</div>
+</body>
 </html>

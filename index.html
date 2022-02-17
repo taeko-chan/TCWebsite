@@ -1,41 +1,33 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+<head>
     <link rel="stylesheet" href="/main.css">
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <meta charset="utf-8">
     <title>Felix Remi Cordone - Taeko</title>
-  </head>
-  <body>
-    <div class="mcontainer">
-      <img src="/assets/taeko.png" alt="Taeko" class="logo">
-      <div class="txtcont">
-        <h1>taeko(-and-co).ch - Main Page</h1>
-        <div class="menubar">
-          <a href="/">home</a>
-          <a href="/tc">taeko & co</a>
-          <a href="/pr">programming</a>
-          <a href="/p">personal</a>
-          <a href="/t">traffic stuff</a>
-        </div>
-        <br><hr><br>
+    <script>
+        $(function () {
+            $('#header').load('/assets/header.html');
+            $('#footer').load('/assets/footer.html');
+        });
+    </script>
+</head>
+<body>
+<div class="mcontainer" id="s1">
+    <div class="txtcont" id="header"></div> <!-- Loaded with JQuery -->
+    <div class="txtcont">
         <h2>Felix Remi Cordone</h2>
         <br>
-        <p>I am Felix (a.k.a. Taeko), a student living in Zurich, Switzerland 🇨🇭</p>
+        <p>I am Felix (a.k.a. Taeko), a student from Zurich, Switzerland 🇨🇭</p>
         <p>I have several hobbies, including:</p><br><br>
         <p>- programming in java & python</p>
         <p>- driving and maintaining my vespa px 125 </p>
         <p>- running my minecraft server with my friends</p>
         <p>- learning about road & traffic engineering</p><br><br>
         <p>have a look around, maybe you'll find something interesting, who knows!</p>
-      </div>
-      <br><hr><br>
-      <div class="footer">
-          <img src="/assets/atbhn.png" alt="Autobahn" class="atbhn">
-          <p>Programmed by Felix Remi Cordone (Taeko)</p>
-          <p>Last update 16. February 2022</p>
-          <p>A huge thanks to <a href="https://skysucht.com">cubisima</a> for hosting!</p>
-      </div>
     </div>
+    <div class="txtcont" id="footer"></div> <!-- Loaded with JQuery -->
     <br><br><br>
-  </body>
+</div>
+</body>
 </html>
